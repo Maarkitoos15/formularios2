@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Envía tu foto de receta</title>
+</head>
+<body>
+    <h2>Envía tu foto de receta</h2>
+    <form action="/subir-receta" method="POST" enctype="multipart/form-data">
+        <label for="receta">Receta:</label>
+        <input type="text" id="receta" name="receta"><br><br>
+
+        <label for="tipo-receta">Tipo de receta</label>
+        <select id="tipo-receta" name="tipo-receta">
+            <option value="carne">Carne</option>
+            <option value="vegetariana">Vegetariana</option>
+            <option value="postre">Postre</option>
+        </select><br><br>
+
+        <label for="imagen">Seleccionar Imagen</label>
+        <input type="file" id="imagen" name="imagen" accept="image/*"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
